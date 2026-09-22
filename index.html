@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>我的第一个网站</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -16,12 +17,14 @@
     </header>
 
     <main>
+
         <section id="home">
             <h2>欢迎来到我的第一个教育网站</h2>
             <p>这是我学习全栈开发的第一个网站</p>
         </section>
+
         <section id="courses">
-            <h2>课程</h2>
+            <h2 class="section-title">课程</h2>
             <p>
                 以下是我计划逐步学习和展示的课程内容
             </p>
@@ -34,10 +37,23 @@
             </ul>
             <button>查看更多课程</button>
         </section>
+
+        <section id="signup">   
+            <h2 class="section-title">课程报名</h2>
+            <form>
+                <label for="student-name">姓名:</label>
+                <input id="student-name" name="studentName" type="text" required>
+                <label for="student-email">邮箱:</label>
+                <input id="student-email" name="studentEmail" type="email" required>
+                <button type="submit">提交</button>
+            </form>
+        </section>
+
         <section id="about">
             <h2>关于我们</h2>
             <p>这个网站将伴随我的 Web 全栈学习过程逐步完善</p>
         </section>
+
     </main>
 
     <footer>
